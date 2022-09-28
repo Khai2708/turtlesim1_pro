@@ -1,0 +1,35 @@
+[0.085s] Invoking command in '/home/asadbek/ros2_ws/build/examples_rclcpp_minimal_action_client': /usr/bin/cmake /home/asadbek/ros2_ws/src/examples/rclcpp/actions/minimal_action_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/asadbek/ros2_ws/install/examples_rclcpp_minimal_action_client
+[0.969s] -- The C compiler identification is GNU 9.4.0
+[1.353s] -- The CXX compiler identification is GNU 9.4.0
+[1.375s] -- Check for working C compiler: /usr/bin/cc
+[1.602s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.606s] -- Detecting C compiler ABI info
+[1.830s] -- Detecting C compiler ABI info - done
+[1.873s] -- Detecting C compile features
+[1.875s] -- Detecting C compile features - done
+[1.886s] -- Check for working CXX compiler: /usr/bin/c++
+[2.125s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.127s] -- Detecting CXX compiler ABI info
+[2.395s] -- Detecting CXX compiler ABI info - done
+[2.424s] -- Detecting CXX compile features
+[2.426s] -- Detecting CXX compile features - done
+[2.496s] CMake Error at CMakeLists.txt:13 (find_package):
+[2.496s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.496s]   has asked CMake to find a package configuration file provided by
+[2.497s]   "ament_cmake", but CMake did not find one.
+[2.497s] 
+[2.497s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.497s]   any of the following names:
+[2.498s] 
+[2.498s]     ament_cmakeConfig.cmake
+[2.498s]     ament_cmake-config.cmake
+[2.498s] 
+[2.498s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.498s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.499s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.499s]   has been installed.
+[2.499s] 
+[2.499s] -- Configuring incomplete, errors occurred!
+[2.499s] See also "/home/asadbek/ros2_ws/build/examples_rclcpp_minimal_action_client/CMakeFiles/CMakeOutput.log".
+[2.500s] 
+[2.511s] Invoked command in '/home/asadbek/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '1': /usr/bin/cmake /home/asadbek/ros2_ws/src/examples/rclcpp/actions/minimal_action_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/asadbek/ros2_ws/install/examples_rclcpp_minimal_action_client

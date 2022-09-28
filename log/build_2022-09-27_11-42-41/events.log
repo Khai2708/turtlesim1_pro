@@ -1,0 +1,126 @@
+[0.000000] (-) TimerEvent: {}
+[0.002139] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.002254] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.002398] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.002511] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.002598] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.002684] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.002770] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.002855] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.002940] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.003025] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.003110] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.003194] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.003278] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.003363] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.003448] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.003549] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.003634] (-) JobUnselected: {'identifier': 'package_name'}
+[0.003719] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.003803] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.003893] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.003986] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.040751] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'cmake'}
+[0.042484] (my_package) Command: {'cmd': ['/usr/bin/cmake', '/home/asadbek/ros2_ws/src/my_package', '-DCMAKE_INSTALL_PREFIX=/home/asadbek/ros2_ws/install/my_package'], 'cwd': '/home/asadbek/ros2_ws/build/my_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asadbek'), ('SSH_AGENT_PID', '2168'), ('ROS_PACKAGE_PATH', '/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/noetic/lib'), ('HOME', '/home/asadbek'), ('OLDPWD', '/home/asadbek/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1993'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asadbek'), ('JOURNAL_STREAM', '8:56363'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asadbek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2205,unix/ubuntu:/tmp/.ICE-unix/2205'), ('INVOCATION_ID', 'ac534f9ab1de44b29c3a1db5a2fb06ce'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/942b0408_27b0_4e4e_9265_dc816f2eb250'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.180'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/asadbek/ros2_ws/build/my_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/opt/ros/noetic')]), 'shell': False}
+[0.098785] (-) TimerEvent: {}
+[0.199866] (-) TimerEvent: {}
+[0.226455] (my_package) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.300922] (-) TimerEvent: {}
+[0.403286] (-) TimerEvent: {}
+[0.420631] (my_package) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.445517] (my_package) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.503887] (-) TimerEvent: {}
+[0.604923] (-) TimerEvent: {}
+[0.695561] (my_package) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.697634] (my_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.705384] (-) TimerEvent: {}
+[0.806016] (-) TimerEvent: {}
+[0.907362] (-) TimerEvent: {}
+[0.921073] (my_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.948873] (my_package) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.949458] (my_package) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.956812] (my_package) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.008334] (-) TimerEvent: {}
+[1.109388] (-) TimerEvent: {}
+[1.211362] (-) TimerEvent: {}
+[1.275593] (my_package) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.278912] (my_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.312041] (-) TimerEvent: {}
+[1.412949] (-) TimerEvent: {}
+[1.514146] (-) TimerEvent: {}
+[1.515357] (my_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.540700] (my_package) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.543433] (my_package) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.572018] (my_package) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.614587] (-) TimerEvent: {}
+[1.715960] (my_package) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.717943] (-) TimerEvent: {}
+[1.719007] (my_package) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.819085] (-) TimerEvent: {}
+[1.920718] (-) TimerEvent: {}
+[2.021552] (-) TimerEvent: {}
+[2.122978] (-) TimerEvent: {}
+[2.224569] (-) TimerEvent: {}
+[2.325619] (-) TimerEvent: {}
+[2.426462] (-) TimerEvent: {}
+[2.527420] (-) TimerEvent: {}
+[2.628354] (-) TimerEvent: {}
+[2.660404] (my_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.728617] (-) TimerEvent: {}
+[2.831790] (-) TimerEvent: {}
+[2.932772] (-) TimerEvent: {}
+[3.036835] (-) TimerEvent: {}
+[3.103270] (my_package) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.109390] (my_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.110245] (my_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/asadbek/ros2_ws/src/my_package/include>\n'}
+[3.110587] (my_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.116164] (my_package) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.117501] (my_package) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.120347] (my_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.127607] (my_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.128053] (my_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.130759] (my_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.137624] (-) TimerEvent: {}
+[3.147736] (my_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.174546] (my_package) StdoutLine: {'line': b'-- Generating done\n'}
+[3.181504] (my_package) StdoutLine: {'line': b'-- Build files have been written to: /home/asadbek/ros2_ws/build/my_package\n'}
+[3.213284] (my_package) CommandEnded: {'returncode': 0}
+[3.225526] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'build'}
+[3.225765] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asadbek/ros2_ws/build/my_package', '--', '-j2', '-l2'], 'cwd': '/home/asadbek/ros2_ws/build/my_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asadbek'), ('SSH_AGENT_PID', '2168'), ('ROS_PACKAGE_PATH', '/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/noetic/lib'), ('HOME', '/home/asadbek'), ('OLDPWD', '/home/asadbek/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1993'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asadbek'), ('JOURNAL_STREAM', '8:56363'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asadbek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2205,unix/ubuntu:/tmp/.ICE-unix/2205'), ('INVOCATION_ID', 'ac534f9ab1de44b29c3a1db5a2fb06ce'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/942b0408_27b0_4e4e_9265_dc816f2eb250'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.180'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/asadbek/ros2_ws/build/my_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/opt/ros/noetic')]), 'shell': False}
+[3.240420] (-) TimerEvent: {}
+[3.341704] (-) TimerEvent: {}
+[3.357322] (my_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target my_node\x1b[0m\n'}
+[3.392800] (my_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o\x1b[0m\n'}
+[3.442158] (-) TimerEvent: {}
+[3.542894] (-) TimerEvent: {}
+[3.595610] (my_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable my_node\x1b[0m\n'}
+[3.644324] (-) TimerEvent: {}
+[3.745987] (-) TimerEvent: {}
+[3.768080] (my_package) StdoutLine: {'line': b'[100%] Built target my_node\n'}
+[3.816986] (my_package) CommandEnded: {'returncode': 0}
+[3.847203] (-) TimerEvent: {}
+[3.948613] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'install'}
+[3.948776] (-) TimerEvent: {}
+[4.004987] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asadbek/ros2_ws/build/my_package'], 'cwd': '/home/asadbek/ros2_ws/build/my_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'asadbek'), ('SSH_AGENT_PID', '2168'), ('ROS_PACKAGE_PATH', '/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/noetic/lib'), ('HOME', '/home/asadbek'), ('OLDPWD', '/home/asadbek/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1993'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asadbek'), ('JOURNAL_STREAM', '8:56363'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asadbek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2205,unix/ubuntu:/tmp/.ICE-unix/2205'), ('INVOCATION_ID', 'ac534f9ab1de44b29c3a1db5a2fb06ce'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/942b0408_27b0_4e4e_9265_dc816f2eb250'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.180'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/asadbek/ros2_ws/build/my_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/noetic/lib/python3/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/opt/ros/noetic')]), 'shell': False}
+[4.048982] (my_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.049728] (-) TimerEvent: {}
+[4.050554] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/lib/my_package/my_node\n'}
+[4.051810] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package\n'}
+[4.053613] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package\n'}
+[4.055322] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh\n'}
+[4.055963] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv\n'}
+[4.056574] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/path.sh\n'}
+[4.057174] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/path.dsv\n'}
+[4.057755] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.bash\n'}
+[4.058395] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.sh\n'}
+[4.062791] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.zsh\n'}
+[4.063392] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.dsv\n'}
+[4.064008] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/package.dsv\n'}
+[4.065260] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/ament_index/resource_index/packages/my_package\n'}
+[4.066069] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake\n'}
+[4.066651] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake\n'}
+[4.067420] (my_package) StdoutLine: {'line': b'-- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/package.xml\n'}
+[4.073657] (my_package) CommandEnded: {'returncode': 0}
+[4.151410] (-) TimerEvent: {}
+[4.238921] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[4.241323] (-) EventReactorShutdown: {}

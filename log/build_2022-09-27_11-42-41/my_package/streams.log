@@ -1,0 +1,58 @@
+[0.041s] Invoking command in '/home/asadbek/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/asadbek/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/asadbek/ros2_ws/install/my_package
+[0.223s] -- The C compiler identification is GNU 9.4.0
+[0.417s] -- The CXX compiler identification is GNU 9.4.0
+[0.442s] -- Check for working C compiler: /usr/bin/cc
+[0.692s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.694s] -- Detecting C compiler ABI info
+[0.917s] -- Detecting C compiler ABI info - done
+[0.945s] -- Detecting C compile features
+[0.948s] -- Detecting C compile features - done
+[0.953s] -- Check for working CXX compiler: /usr/bin/c++
+[1.272s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.275s] -- Detecting CXX compiler ABI info
+[1.512s] -- Detecting CXX compiler ABI info - done
+[1.537s] -- Detecting CXX compile features
+[1.540s] -- Detecting CXX compile features - done
+[1.568s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.713s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.715s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.657s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.100s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.106s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.106s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/asadbek/ros2_ws/src/my_package/include>
+[3.107s] -- Configured cppcheck exclude dirs and/or files: 
+[3.113s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.114s] -- Configured cpplint exclude dirs and/or files: 
+[3.117s] -- Added test 'lint_cmake' to check CMake code style
+[3.124s] -- Added test 'uncrustify' to check C / C++ code style
+[3.124s] -- Configured uncrustify additional arguments: 
+[3.127s] -- Added test 'xmllint' to check XML markup files
+[3.144s] -- Configuring done
+[3.171s] -- Generating done
+[3.178s] -- Build files have been written to: /home/asadbek/ros2_ws/build/my_package
+[3.220s] Invoked command in '/home/asadbek/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/asadbek/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/asadbek/ros2_ws/install/my_package
+[3.227s] Invoking command in '/home/asadbek/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/asadbek/ros2_ws/build/my_package -- -j2 -l2
+[3.354s] [35m[1mScanning dependencies of target my_node[0m
+[3.389s] [ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[3.592s] [100%] [32m[1mLinking CXX executable my_node[0m
+[3.765s] [100%] Built target my_node
+[3.814s] Invoked command in '/home/asadbek/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/asadbek/ros2_ws/build/my_package -- -j2 -l2
+[4.002s] Invoking command in '/home/asadbek/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/asadbek/ros2_ws/build/my_package
+[4.045s] -- Install configuration: ""
+[4.047s] -- Installing: /home/asadbek/ros2_ws/install/my_package/lib/my_package/my_node
+[4.048s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[4.050s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[4.052s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[4.052s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[4.053s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/path.sh
+[4.053s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/environment/path.dsv
+[4.054s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.bash
+[4.055s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.sh
+[4.059s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.zsh
+[4.059s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/local_setup.dsv
+[4.060s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/package.dsv
+[4.061s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[4.062s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[4.063s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[4.064s] -- Installing: /home/asadbek/ros2_ws/install/my_package/share/my_package/package.xml
+[4.070s] Invoked command in '/home/asadbek/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/asadbek/ros2_ws/build/my_package

@@ -1,0 +1,10 @@
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/install/strip.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/install/local.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/install.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/list_install_components.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/rebuild_cache.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/edit_cache.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/test.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/my_package_uninstall.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/my_node.dir
+/home/asadbek/ros2_ws/build/my_package/CMakeFiles/uninstall.dir
