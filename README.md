@@ -485,7 +485,8 @@ asadbek@ubuntu:~$ python3 fibonacci_action_server.py
 ....
 ```
 ### Composing multiple nodes in a single process
-#DISCOVER AVAILABLE COMPONENTS
+#### DISCOVER AVAILABLE COMPONENTS
+```
 asadbek@ubuntu:~$ ros2 component types
 action_tutorials_cpp
   action_tutorials_cpp::FibonacciActionClient
@@ -502,10 +503,53 @@ image_tools
   image_tools::Cam2Image
   image_tools::ShowImage
 joy ...
+```
+##### Run-time composition using ROS services with a publisher and subscriber
+```
+# In the first shell, start the component container:
+--------------------------------------------------------
+asadbek@ubuntu:~$ ros2 run rclcpp_components component_container
 
-#####Run-time composition using ROS services with a publisher and subscriber
+# Open the second shell and verify that the container is running via ros2 command line tools:
+---------------------------------------------------------------------------
+asadbek@ubuntu:~$ ros2 component list
+/ComponentManager
+#asadbek@ubuntu:~$ ros2 component load /ComponentManager composition composition::Talker
+Loaded component 1 into '/ComponentManager' container node as '/talker'
+asadbek@ubuntu:~$
 
+#In the second shell load the talker component 
+asadbek@ubuntu:~$ ros2 run rclcpp_components component_container
+--------------------------------------------------------------------
+#Now the first shell should show a message that the component was loaded as well as repeated message for publishing a message.
+asadbek@ubuntu:~$ ros2 run rclcpp_components component_container
+[INFO] [1666334596.518827588] [ComponentManager]: Load Library: /opt/ros/foxy/lib/libtalker_component.so
+[INFO] [1666334596.527068008] [ComponentManager]: Found class: rclcpp_components::NodeFactoryTemplate<composition::Talker>
+[INFO] [1666334596.527209749] [ComponentManager]: Instantiate class: rclcpp_components::NodeFactoryTemplate<composition::Talker>
+[INFO] [1666334597.574873610] [talker]: Publishing: 'Hello World: 1'
+[INFO] [1666334598.574389449] [talker]: Publishing: 'Hello World: 2'
+[INFO] [1666334599.573799202] [talker]: Publishing: 'Hello World: 3'
+[INFO] [1666334600.574322492] [talker]: Publishing: 'Hello World: 4'
+...
 
+#Run another command in the second shell to load the listener component
+---------------------------------------------------------------------
+asadbek@ubuntu:~$  ros2 component load /ComponentManager composition composition::Listener
+Loaded component 2 into '/ComponentManager' container node as '/listener'
+
+#Now the first shell should show repeated output for each received message.
+-----------------------------------------------------------------------------
+asadbek@ubuntu:~$ ros2 run rclcpp_components component_container
+[INFO] [1666335304.720814020] [ComponentManager]: Load Library: /opt/ros/foxy/lib/libtalker_component.so
+[INFO] [1666335304.721622710] [ComponentManager]: Found class: rclcpp_components::NodeFactoryTemplate<composition::Talker>
+[INFO] [1666335304.721757286] [ComponentManager]: Instantiate class: rclcpp_components::NodeFactoryTemplate<composition::Talker>
+[INFO] [1666335305.733862016] [talker]: Publishing: 'Hello World: 1'
+[INFO] [1666335305.734349304] [listener]: I heard: [Hello World: 1]
+[INFO] [1666335305.734453155] [listener]: I heard: [Hello World: 1]
+[INFO] [1666335306.733860128] [talker]: Publishing: 'Hello World: 2'
+[INFO] [1666335306.734136702] [listener]: I heard: [Hello World: 2]
+[INFO] [1666335306.734182823] [listener]: I heard: [Hello World: 2]
+...
 ```
 
 
