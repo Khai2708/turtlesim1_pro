@@ -347,4 +347,76 @@ asadbek@ubuntu:~/ros2_ws$ . install/setup.bash
 asadbek@ubuntu:~/ros2_ws$ ros2 run py_srvcli client 2 3
 [INFO] [1664849371.665846561] [minimal_client_async]: Result of add_two_ints: for 2 + 3 = 5
 ```
+## Intermediate level
+### Creating an action
+```
+#create a package named action_tutorials_interfaces
+asadbek@ubuntu:~$ mkdir -p ros2_ws/src #you can reuse existing workspace with this naming convention
+asadbek@ubuntu:~$ cd ros2_ws/src
+asadbek@ubuntu:~/ros2_ws/src$ ros2 pkg create action_tutorials_interfaces
+ros2: command not found
+asadbek@ubuntu:~/ros2_ws/src$ source /opt/ros/foxy/setup.sh
+ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+asadbek@ubuntu:~/ros2_ws/src$ ros2 pkg create action_tutorials_interfaces
+going to create a new package
+package name: action_tutorials_interfaces
+destination directory: /home/asadbek/ros2_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['asadbek <khalilovasadbek27@gmail.com>']
+licenses: ['TODO: License declaration']
+build type: ament_cmake
+dependencies: []
+creating folder ./action_tutorials_interfaces
+creating ./action_tutorials_interfaces/package.xml
+creating source and include folder
+creating folder ./action_tutorials_interfaces/src
+creating folder ./action_tutorials_interfaces/include/action_tutorials_interfaces
+creating ./action_tutorials_interfaces/CMakeLists.txt
+asadbek@ubuntu:~/ros2_ws/src$ cd action_tutorials_interfaces
+
+#create a file called Fibonacci.action
+
+asadbek@ubuntu:~/ros2_ws/src$ cd action_tutorials_interfaces
+asadbek@ubuntu:~/ros2_ws/src/action_tutorials_interfaces$ mkdir action
+asadbek@ubuntu:~/ros2_ws/src/action_tutorials_interfaces$ code Fibonacci.action
+asadbek@ubuntu:~/ros2_ws/src/action_tutorials_interfaces$ ls
+action  CMakeLists.txt  Fibonacci.action  include  package.xml  src
+asadbek@ubuntu:~/ros2_ws/src/action_tutorials_interfaces$ code CMakeLists.txt 
+asadbek@ubuntu:~/ros2_ws/src/action_tutorials_interfaces$ code package.xml 
+asadbek@ubuntu:~/ros2_ws/src/action_tutorials_interfaces$ cd ~/ros2_ws/
+asadbek@ubuntu:~/ros2_ws$ colcone build
+colcone: command not found
+
+#Build COLCON
+asadbek@ubuntu:~/ros2_ws$ colcon build
+[1.354s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'examples_rclcpp_minimal_timer' is in: /opt/ros/foxy
+	'examples_rclcpp_minimal_action_server' is in: /opt/ros/foxy
+	'examples_rclpy_minimal_subscriber' 
+	....
+#adding the following lines to our CMakeLists.txt AND to our package.xml
+```
+![image](https://user-images.githubusercontent.com/90145797/197122177-93175cac-0c57-4992-8215-1dfe18eb5e81.png)
+![image](https://user-images.githubusercontent.com/90145797/197122210-33e7cbb4-1f33-43c2-8509-cf3e2e4b172c.png)
+
+#### Final to result to check
+```
+###We can check that our action built successfully
+asadbek@ubuntu:~/ros2_ws$ # Source our workspace
+asadbek@ubuntu:~/ros2_ws$ # On Windows: call install/setup.bat
+asadbek@ubuntu:~/ros2_ws$ . install/setup.bash
+ROS_DISTRO was set to 'foxy' before. Please make sure that the environment does not mix paths from different distributions.
+ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+asadbek@ubuntu:~/ros2_ws$ # Check that our action definition exists
+asadbek@ubuntu:~/ros2_ws$ ros2 interface show action_tutorials_interfaces/action/Fibonacci
+int32 order
+---
+int32[] sequence
+---
+int32[] partial_sequence
+```
+
+
 
