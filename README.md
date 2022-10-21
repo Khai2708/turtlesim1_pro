@@ -551,5 +551,48 @@ asadbek@ubuntu:~$ ros2 run rclcpp_components component_container
 [INFO] [1666335306.734182823] [listener]: I heard: [Hello World: 2]
 ...
 ```
+### Creating a launch
+
+```
+#Create a new directory to store your launch files and write the lancg file
+----------------------------------------------------------------------------
+asadbek@ubuntu:~$ mkdir launch
+asadbek@ubuntu:~$ cd launch/
+asadbek@ubuntu:~/launch$ code turtlesim_mimic_launch.py
+
+#Run the launch files above
+------------------------------------------------------------------------
+asadbek@ubuntu:~/launch$ ros2 launch turtlesim_mimic_launch.py
+[INFO] [launch]: All log files can be found below /home/asadbek/.ros/log/2022-10-21-16-04-24-835874-ubuntu-127117
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [turtlesim_node-1]: process started with pid [127119]
+[INFO] [turtlesim_node-2]: process started with pid [127121]
+[INFO] [mimic-3]: process started with pid [127123]
+[turtlesim_node-1] [INFO] [1666335865.829246958] [turtlesim1.sim]: Starting turtlesim with node name /turtlesim1/sim
+[turtlesim_node-2] [INFO] [1666335865.830976504] [turtlesim2.sim]: Starting turtlesim with node name /turtlesim1/sim
+[turtlesim_node-2] [INFO] [1666335865.862988742] [turtlesim2.sim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+[turtlesim_node-1] [INFO] [1666335865.884127410] [turtlesim1.sim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+
+```
+![image](https://user-images.githubusercontent.com/90145797/197135469-8eceb9c5-bb89-4b00-b314-9020d022af4b.png)
+
+#### To see the system in action, open a new terminal and run the ros2 topic pub commands below
+
+```
+asadbek@ubuntu:~$ ros2 topic pub -r 1 /turtlesim1/turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}"
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=2.0, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=-1.8))
+
+publishing #2: geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=2.0, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=-1.8))
+...
+```
+![Screenshot from 2022-10-21 16-09-03](https://user-images.githubusercontent.com/90145797/197134874-1f99cce8-c3fb-44b8-be8c-328776301cc0.png)
+
+#### Introspect the system with rqt_graph
+```
+asadbek@ubuntu:~/launch$ rqt_graph
+[INFO] [1665557607.422017603] [rclcpp]: signal_handler(signal_value=2)
+```
+![image](https://user-images.githubusercontent.com/90145797/197136262-2a61a53a-e13c-410c-84d6-fc3dfb132c78.png)
 
 
