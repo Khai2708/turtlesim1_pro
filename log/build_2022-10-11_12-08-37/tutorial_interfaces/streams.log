@@ -1,0 +1,52 @@
+[0.052s] Invoking command in '/home/asadbek/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/asadbek/ros2_ws/build/tutorial_interfaces -- -j2 -l2
+[0.147s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.202s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.202s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.741s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.751s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.113s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.313s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.391s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.929s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[1.929s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.930s]   tutorial_interfaces --arguments-file
+[1.930s]   /home/asadbek/ros2_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[1.930s]   --output-dir
+[1.930s]   /home/asadbek/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[1.931s]   --output-file
+[1.931s]   /home/asadbek/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[1.931s]   returned error code 1:
+[1.931s] 
+[1.932s]   Error processing ' float64 x' of 'tutorial_interfaces/Sphere': 'string
+[1.932s]   index out of range'
+[1.932s] 
+[1.932s]   Traceback (most recent call last):
+[1.932s] 
+[1.933s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[1.933s]       return _run_code(code, main_globals, None,
+[1.933s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[1.933s]       exec(code, run_globals)
+[1.933s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.934s]       sys.exit(main())
+[1.934s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.934s]       abs_idl_file = convert_to_idl(
+[1.934s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.934s]       return convert_msg_to_idl(
+[1.935s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.935s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.935s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[1.937s]       Type(type_string, context_package_name=pkg_name),
+[1.937s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 240, in __init__
+[1.942s]       self.is_array = type_string[-1] == ']'
+[1.942s] 
+[1.945s]   IndexError: string index out of range
+[1.945s] 
+[1.946s] Call Stack (most recent call first):
+[1.946s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.946s]   CMakeLists.txt:6 (rosidl_generate_interfaces)
+[1.947s] 
+[1.947s] 
+[1.947s] -- Configuring incomplete, errors occurred!
+[1.947s] See also "/home/asadbek/ros2_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[1.960s] make: *** [Makefile:1228: cmake_check_build_system] Error 1
+[1.974s] Invoked command in '/home/asadbek/ros2_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/asadbek/ros2_ws/build/tutorial_interfaces -- -j2 -l2
