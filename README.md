@@ -417,6 +417,95 @@ int32[] sequence
 ---
 int32[] partial_sequence
 ```
+### Writing an action server and client(Python)
+```
+#Writing an action server
+-------------------------
+asadbek@ubuntu:~$ code fibonacci_action_server.py
 
+#You can get the action_server code from this link:
+---------------------------------------------------
+```
+#############################################33link
+
+```
+#Run the action server
+asadbek@ubuntu:~$ python3 fibonacci_action_server.py 
+[INFO] [1664948740.009765307] [fibonacci_action_server]: Executing goal...
+[WARN] [1664948740.010891932] [fibonacci_action_server]: Goal state not set, assuming aborted. Goal ID: [ 43 132  59 102 136 104  68 222 136  35 140  96 233 172 179 145]
+
+#In another terminal, use the command line interface to send a goal:
+--------------------------------------------------------------------
+asadbek@ubuntu:~$ ros2 action send_goal fibonacci action_tutorials_interfaces/action/Fibonacci "{order: 5}"
+Waiting for an action server to become available...
+Sending goal:
+     order: 5
+
+Goal accepted with ID: 15197cd7683f45baa7c2facdddd31a74
+
+Result:
+    sequence:
+- 0
+- 1
+- 1
+- 2
+- 3
+- 5
+
+Goal finished with status: SUCCEEDED
+
+# Writing a action_client server
+-------------------------
+asadbek@ubuntu:~$ nano fibonacci_action_client.py
+
+#You can get the action_client code from this link:
+---------------------------------------------------
+```
+###########################3link
+
+```
+#Run the action client
+-----------------------
+asadbek@ubuntu:~$ python3 fibonacci_action_client.py
+[INFO] [1664949683.787442150] [fibonacci_action_client]: Goal accepted :)
+[INFO] [1664949683.790887484] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1])
+[INFO] [1664949684.794285170] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1, 2])
+[INFO] [1664949685.796666631] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1, 2, 3])
+[INFO] [1664949686.799187578] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1, 2, 3, 5])
+....
+
+#In another terminal, run the action_server:
+--------------------------------------------------------------------
+asadbek@ubuntu:~$ python3 fibonacci_action_server.py 
+[INFO] [1664949683.788839423] [fibonacci_action_server]: Executing goal...
+[INFO] [1664949683.789502547] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1])
+[INFO] [1664949684.792395799] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1, 2])
+[INFO] [1664949685.794762732] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1, 2, 3])
+[INFO] [1664949686.797654565] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1, 2, 3, 5])
+....
+```
+### Composing multiple nodes in a single process
+#DISCOVER AVAILABLE COMPONENTS
+asadbek@ubuntu:~$ ros2 component types
+action_tutorials_cpp
+  action_tutorials_cpp::FibonacciActionClient
+  action_tutorials_cpp::FibonacciActionServer
+depthimage_to_laserscan
+  depthimage_to_laserscan::DepthImageToLaserScanROS
+composition
+  composition::Talker
+  composition::Listener
+  composition::NodeLikeListener
+  composition::Server
+  composition::Client
+image_tools
+  image_tools::Cam2Image
+  image_tools::ShowImage
+joy ...
+
+#####Run-time composition using ROS services with a publisher and subscriber
+
+
+```
 
 
